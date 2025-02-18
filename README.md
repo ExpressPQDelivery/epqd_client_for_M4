@@ -34,7 +34,7 @@ This is a library that implements ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ client based 
 ## Configuring
 
 ### 1. Enable ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ and PQ algorithms
-in line 141 of `Core/Inc/user_setting.h` we can enable #define HAVE_PQDELIVARY to use ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ; if we comment it out, we can run the original PQC-TLS.
+in line 141 of `Core/Inc/user_setting.h` we can enable `#define HAVE_PQDELIVARY` to use ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ; if we comment it out, we can run the original PQC-TLS.
 
 in line 133-134, We can choose which signature algorithms (Falcon or Dilithum) will be enabled.
 Note that we use only Kyber as the KEM.
