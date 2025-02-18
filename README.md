@@ -75,3 +75,6 @@ To use this project to establish a TLS connection to a remote PC (Server) (i.e a
 1. Set up a client to run on the board by "downloading" the code to the board.
 2. Edit the external DNS IP and the server port number, then run a client.
 
+## Serial terminal
+
+We use [CoolTerm](https://freeware.the-meiers.org/) as a serial terminal.
