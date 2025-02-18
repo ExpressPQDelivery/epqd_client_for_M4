@@ -28,7 +28,7 @@ This version is developed and is mainly targeting the [STM32 Nucleo F439ZI](http
 
 1. Download this repository as a ziped file:
 
-2. Using STM32 Cube IDE, go to `File > Import > Projects from Folder or Archive`, select the `Archive...` button and select the file `pq-wolfssl-for-embedded-main.zip`.
+2. Using STM32 Cube IDE, go to `File > Import > Projects from Folder or Archive`, select the `Archive...` button and select the file `epqd_client_for_nucleof439zi.zip`.
 
 3. Click `Finish` and the project is ready to be built.
 
