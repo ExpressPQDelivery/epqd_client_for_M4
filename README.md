@@ -25,7 +25,7 @@ This is a library that implements ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ client based 
 ### STM32 Cube IDE
 0. Connect the LAN and power to the board to enable communication via LwIP.
 
-1. Download this repository as a ziped file:
+1. Download this repository.
 
 2. Using STM32 Cube IDE, go to `File > Import > Projects from Folder or Archive`, select the `Archive...` button and select the file `epqd_client_for_nucleof439zi.zip`.
 
