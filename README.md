@@ -18,12 +18,12 @@ This is a library that implements ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ client based 
 
 - This version is developed and is mainly targeting the [STM32 Nucleo F439ZI](https://www.st.com/en/evaluation-tools/nucleo-f439zi.html) board.
 - For networking, the [LwIP](https://savannah.nongnu.org/projects/lwip/) TCP/IP stack (version 2.1.2) is used and the [FreeRTOS](https://www.freertos.org/), as a real time operating system.
-- You should
 
 ## Installation
 
 
 ### STM32 Cube IDE
+0. Connect the LAN and power to the board to enable communication via LwIP.
 
 1. Download this repository as a ziped file:
 
@@ -61,12 +61,15 @@ namely we have the following equivelences:
 
 **SECURITY_LEVEL 5** --> Kyber1024, Falcon1024
 
+### 3. Set the DNS IP address and the server Port number
+in line 115 of `Core/Src/main.c` we can set the domain name of the server.
+in line 1577 of `Core/Src/main.c` we can set the DNS IP address.
+
 ## Usage
 
 To use this project to establish a TLS connection to a remote PC (Server) (i.e a server running [this](https://github.com/ExpressPQDelivery/epqd_server_lib_forM4) project) you should do:
 
-0. Connect the LAN and power to the board to enable communication via lwIP....
-1. Set up a DNS ((see [DNS](https://github.com/ExpressPQDelivery/DNS_records_for_epqd))) and a Server before run the client......
-2. Set up a client to run on the board by "downloading" the code to the board.
-3. Get the external DNS IP and run the client.
+0. Set up a DNS ((see [here](https://github.com/ExpressPQDelivery/DNS_records_for_epqd))) and a server before running a client.
+1. Set up a client to run on the board by "downloading" the code to the board.
+2. Edit the external DNS IP and the server port number, then run a client.
 
