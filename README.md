@@ -14,12 +14,11 @@ This is a library that implements ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ based on Wolf
 
 - [x] Falcon
 
-For networking, the [LwIP](https://savannah.nongnu.org/projects/lwip/) TCP/IP stack (version 2.1.2) is used and the [FreeRTOS](https://www.freertos.org/), as a real time operating system.
+## Target Board and Settings
 
-## Target Boards
-
-This version is developed and is mainly targeting the [STM32 Nucleo F439ZI](https://www.st.com/en/evaluation-tools/nucleo-f439zi.html) board.
-
+- This version is developed and is mainly targeting the [STM32 Nucleo F439ZI](https://www.st.com/en/evaluation-tools/nucleo-f439zi.html) board.
+- For networking, the [LwIP](https://savannah.nongnu.org/projects/lwip/) TCP/IP stack (version 2.1.2) is used and the [FreeRTOS](https://www.freertos.org/), as a real time operating system.
+- You should
 
 ## Installation
 
@@ -62,4 +61,12 @@ namely we have the following equivelences:
 
 **SECURITY_LEVEL 5** --> Kyber1024, Falcon1024
 
+## Usage
+
+To use this project to establish a TLS connection to a remote PC (Server) (i.e a server running [this](https://github.com/ExpressPQDelivery/epqd_server_lib_forM4) project) you should do:
+
+0. Connect the LAN and power to the board to enable communication via lwIP....
+1. Set up a DNS and a Server before run the client......
+2. Set up a client to run on the board by "downloading" the code to the board.
+3. Get the external DNS IP and run the client.
 
