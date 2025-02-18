@@ -71,7 +71,7 @@ in line 1577 of `Core/Src/main.c` we can set the DNS IP address.
 
 To use this project to establish a TLS connection to a remote PC (Server) (i.e a server running [this](https://github.com/ExpressPQDelivery/epqd_server_lib_forM4) project) you should do:
 
-0. Set up a DNS ((see [here](https://github.com/ExpressPQDelivery/DNS_records_for_epqd))) and a server before running a client.
+0. Set up a DNS (see [here](https://github.com/ExpressPQDelivery/DNS_records_for_epqd)) and a server before running a client.
 1. Set up a client to run on the board by "downloading" the code to the board.
 2. Edit the external DNS IP and the server port number, then run a client.
 
