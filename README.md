@@ -77,4 +77,4 @@ To use this project to establish a TLS connection to a remote PC (Server) (i.e a
 
 ## Serial terminal
 
-We use [CoolTerm](https://freeware.the-meiers.org/) as a serial terminal.
+We use [CoolTerm](https://coolterm.macupdate.com/) as a serial terminal.
