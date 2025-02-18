@@ -33,3 +33,33 @@ This version is developed and is mainly targeting the [STM32 Nucleo F439ZI](http
 3. Click `Finish` and the project is ready to be built.
 
 ## Configuring
+
+### 1. Enable ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ and PQ algorithms
+in line 141 of `Core/Inc/user_setting.h` we can enable #define HAVE_PQDELIVARY to use ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ; otherwise, it defaults to the original PQC-TLS.
+
+in line 133-134, We can choose which signature algorithms (Falcon or Dilithum) will be enabled.
+Note that we use only Kyber as the KEM.
+
+**   **From now on we define *"Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl"* as "/"** 	**
+
+### 2. Choose the security strength of PQ algorithms
+
+
+edit the following files: 
+
+*"/wolfcrypt/postquantum/kyber/kyber_security.h"*
+
+*"/wolfcrypt/postquantum/dilithium/dilithium_security.h"*
+
+*"/wolfcrypt/postquantum/falcon/falcon_security.h"*
+
+
+namely we have the following equivelences:
+
+**SECURITY_LEVEL 1** --> Kyber512, Dilithium2, Falcon512
+
+**SECURITY_LEVEL 3** --> Kyber768, Dilithium3
+
+**SECURITY_LEVEL 5** --> Kyber1024, Falcon1024
+
+
