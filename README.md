@@ -37,6 +37,7 @@ This is a library that implements ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ client based 
 in line 141 of `Core/Inc/user_setting.h` we can enable `#define HAVE_PQDELIVARY` to use ExᴘʀᴇssPQDᴇʟɪᴠᴇʀʏ; if we comment it out, we can run the original PQC-TLS.
 
 in line 133-134, We can choose which signature algorithms (Falcon or Dilithum) will be enabled.
+
 Note that we use only Kyber as the KEM.
 
 **   **From now on we define *"Middlewares/Third_Party/wolfSSL_wolfSSL_wolfSSL/wolfssl"* as "/"** 	**
@@ -63,6 +64,7 @@ namely we have the following equivelences:
 
 ### 3. Set the DNS IP address and the server Port number
 in line 115 of `Core/Src/main.c` we can set the domain name of the server.
+
 in line 1577 of `Core/Src/main.c` we can set the DNS IP address.
 
 ## Usage
